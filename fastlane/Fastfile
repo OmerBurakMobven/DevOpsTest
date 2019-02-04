@@ -11,7 +11,7 @@ PROJECT_NAME = "DevOpsTest";
         export_xcargs: "-allowProvisioningUpdates"
       })
   slack(
-    message: "Successfully iosDeploy :rocket:",
+    message: "iOS Build Successfully :rocket:",
     slack_url: "https://hooks.slack.com/services/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",
     channel: "#devops",
     success: true,
