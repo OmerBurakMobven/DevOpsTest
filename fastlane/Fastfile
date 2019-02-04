@@ -6,7 +6,7 @@ PROJECT_NAME = "DevOpsTest";
 
   lane :beta do
     gym(scheme: "DevOpsTest",
-    export_method: 'ad-hoc',
+    export_method: 'development',
     export_options: {
         export_xcargs: "-allowProvisioningUpdates"
       })
