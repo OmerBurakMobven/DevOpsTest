@@ -10,7 +10,7 @@ PROJECT_NAME = "DevOpsTest";
       silent: true,
       # workspace: "project.xcworkspace",
       export_method: 'development',
-      configuration: 'debug',
+      configuration: 'debug'
 
       )
   end
