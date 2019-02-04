@@ -5,13 +5,13 @@ platform :ios do
 PROJECT_NAME = "DevOpsTest";
 
   lane :beta do
-    build_ios_app(
-      clean: true,
-      silent: true,
-      # workspace: "project.xcworkspace",
-      export_method: 'development'
-
-      )
+    gym(scheme: "DevOpsTest",
+    configuration: "Internal Release",
+    export_method: 'ad-hoc',
+    export_options: {
+      use_automatic_signing: 'true',
+        export_xcargs: "-allowProvisioningUpdates"
+      })
   end
 
 end
