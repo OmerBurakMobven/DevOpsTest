@@ -433,13 +433,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3K3PNZXZ7M;
+				DEVELOPMENT_TEAM = 4SC3X3V4Z2;
 				INFOPLIST_FILE = DevOpsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tr.com.fordotosan.DevOpsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.fordotosan.DevOps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,13 +451,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3K3PNZXZ7M;
+				DEVELOPMENT_TEAM = 4SC3X3V4Z2;
 				INFOPLIST_FILE = DevOpsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tr.com.fordotosan.DevOpsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.fordotosan.DevOps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
