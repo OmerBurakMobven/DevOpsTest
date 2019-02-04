@@ -10,6 +10,13 @@ PROJECT_NAME = "DevOpsTest";
     export_options: {
         export_xcargs: "-allowProvisioningUpdates"
       })
+  slack(
+    message: "Successfully iosDeploy :rocket:",
+    slack_url: "https://hooks.slack.com/services/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",
+    channel: "#devops",
+    success: true,
+    default_payloads: [:git_branch, :last_git_commit_message]
+)
   end
 
 end
