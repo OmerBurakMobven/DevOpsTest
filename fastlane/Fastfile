@@ -34,8 +34,7 @@ PROJECT_NAME = "DevOpsTest";
   lane :coverage do
 
   slather(llvm_cov: true, jenkins: true, scheme: "#{PROJECT_NAME}", output_directory: "./reports", proj: "./#{PROJECT_NAME}.xcodeproj")
-  sh("cd .. && lizard ./#{PROJECT_NAME} -l swift --xml > ./reports/lizard-report.xml")
-  swiftlint(output_file: "./reports/swiftlint.txt", ignore_exit_status: true)
+  
 end
 
 end
