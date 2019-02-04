@@ -6,7 +6,6 @@ PROJECT_NAME = "DevOpsTest";
 
   lane :beta do
     gym(scheme: "DevOpsTest",
-    configuration: "Internal Release",
     export_method: 'ad-hoc',
     export_options: {
       use_automatic_signing: 'true',
