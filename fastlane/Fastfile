@@ -8,7 +8,6 @@ PROJECT_NAME = "DevOpsTest";
     gym(scheme: "DevOpsTest",
     export_method: 'ad-hoc',
     export_options: {
-      use_automatic_signing: 'true',
         export_xcargs: "-allowProvisioningUpdates"
       })
   end
