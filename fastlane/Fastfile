@@ -19,4 +19,9 @@ PROJECT_NAME = "DevOpsTest";
 )
   end
 
+  lane :test do
+    run_tests(scheme: "DevOpsTest")
+    
+  end
+
 end
