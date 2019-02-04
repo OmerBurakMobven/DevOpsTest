@@ -1,0 +1,18 @@
+default_platform :ios
+
+platform :ios do
+
+PROJECT_NAME = "DeOpsTest";
+
+  lane :beta do
+    build_ios_app(
+      clean: true,
+      silent: true,
+      workspace: "project.xcworkspace",
+      export_method: 'development',
+      configuration: 'debug',
+
+      )
+  end
+
+end
