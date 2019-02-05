@@ -6,10 +6,37 @@ PROJECT_NAME = "DevOpsTest";
 
   lane :beta do
     gym(scheme: "DevOpsTest",
-    export_method: 'ad-hoc',
+    export_method: 'development',
     export_options: {
         export_xcargs: "-allowProvisioningUpdates"
       })
+  slack(
+    message: "iOS Build Successfully :rocket:",
+    slack_url: "https://hooks.slack.com/services/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",
+    channel: "#devops",
+    success: true,
+    default_payloads: [:git_branch, :last_git_commit_message]
+)
   end
+
+  lane :test do
+    run_tests(scheme: "DevOpsTest")
+
+    slack(
+      message: "iOS Test Successfully :hammer:",
+      slack_url: "https://hooks.slack.com/services/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",
+      channel: "#devops",
+      success: true,
+      default_payloads: [:git_branch, :last_git_commit_message]
+  )
+  end
+
+  lane :coverage do
+
+  slather(
+    scheme: "DevOpsTest"
+  )
+
+end
 
 end
