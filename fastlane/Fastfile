@@ -33,8 +33,11 @@ PROJECT_NAME = "DevOpsTest";
 
   lane :coverage do
 
-  slather(llvm_cov: true, jenkins: true, scheme: "#{PROJECT_NAME}", output_directory: "./reports", proj: "./#{PROJECT_NAME}.xcodeproj")
-  
+  slather(
+    scheme: "#{PROJECT_NAME}",
+    proj: "./#{PROJECT_NAME}.xcodeproj"
+  )
+
 end
 
 end
