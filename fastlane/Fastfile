@@ -34,8 +34,7 @@ PROJECT_NAME = "DevOpsTest";
   lane :coverage do
 
   slather(
-    scheme: "DevOpsTest",
-    proj: "DevOpsTest.xcodeproj"
+    scheme: "DevOpsTest"
   )
 
 end
