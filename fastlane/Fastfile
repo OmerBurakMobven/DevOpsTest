@@ -37,7 +37,30 @@ PROJECT_NAME = "DevOpsTest";
     scheme: "DevOpsTest",
     proj: "DevOpsTest.xcodeproj"
   )
+  slack(
+    message: "iOS Coverage Successfully :gear:",
+    slack_url: "https://hooks.slack.com/services/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",
+    channel: "#devops",
+    success: true,
+    default_payloads: [:git_branch, :last_git_commit_message]
+)
+end
 
+lane :upload do
+  hockey(
+    api_token: "dcc97734c6194344be6eb02bb8aff1d0",
+    notify: "1",
+    ipa: "./DevOpsTest.ipa",
+    notes_type: '0',
+    notes: changelog_from_git_commits(pretty: '%h %s'))
+
+    slack(
+      message: "iOS upload Successfully :up:",
+      slack_url: "https://hooks.slack.com/services/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",
+      channel: "#devops",
+      success: true,
+      default_payloads: [:git_branch, :last_git_commit_message]
+  )
 end
 
 end
